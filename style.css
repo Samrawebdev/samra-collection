@@ -1,0 +1,272 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: #fff7f9;
+    color:#333;
+}
+header{
+    background-color: #8e44ad;
+    color: green;
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #ffd6ff;
+}
+h1 {
+    color: white;
+}
+.hero{
+    text-align:center;
+    padding: 70px 20px;
+    background-color: #f3d7ff;
+}
+.hero h2{
+    font-size: 40px;
+    color: #6c3483;
+    margin-bottom: 15px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+button{
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #6c3483;
+}
+.product{
+    padding: 50px 20px;
+    text-align: center;
+}
+.product-section{
+    width: 100%;
+}
+.product-section h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color:#6c3483;
+    margin:0 auto 30px;
+}
+.product-section h2::after{
+    content:"\2665";
+    color:#6c3483;
+    font-size: 28px;
+    display: block;
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.product{
+    background-color: white;
+    width: 330px;
+    padding: 25px;
+    min-height: 520px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0 0.18);
+    transition: 0.3s;
+}
+.product:hover{
+    transform: translateY(-10px);
+}
+.product-image img{
+    width: 100%;
+    height:380px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.product h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #6c3483;
+}
+.product p{
+    color: #5555;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.product button{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight:bold;
+    cursor: pointer;
+    transition:0.3;
+}
+.product button:hover{
+    background-color: #6c3483;
+}
+.product-section{
+    text-align: center;
+    background-color: #fff0e8;
+    padding: 50px 20px;
+}
+.product-section h2{
+    text-align: center !important;
+    font-size:32px !important;
+    color: #6c3483;
+    margin: 5px;
+}
+.product-section h2::after{
+    content: "\2665";
+    display: block;
+    font-size:28px;
+    color: #6c3483;
+    margin-top: 5px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+header{
+    background-color: #fff;
+    border-bottom:1px solid #ddd;
+}
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+nav a{
+    color: #333;
+}
+nav a:hover{
+    color: #d63384;
+    text-decoration: underline;
+}
+nav a{
+    transition: 0.3s;
+}
+nav a:hover{
+    transform: scale(1.o5);
+}
+header h1{
+    letter-spacing: 1px;
+}
+nav a {
+    display:linline- block;
+    padding: 5px 8px;
+}
+nav a:hover{
+    text-decoration: none;
+}
+#about
+#contact{
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+#aboutp,
+#contacth2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #6c3483;
+}
+#aboutp,
+#contact p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+#contact{
+    text-align: center;
+}
+#contact form{
+    max-width: 500px;
+    margin: 20px auto;
+}
+#contact input,
+#contact textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact button{
+    padding: 12px 25px;
+    background-color: #6c3483;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*Responsive Design*/
+@media(max-width:768px){
+    .products{
+        grid-template-columns: 1fr 1fr;
+         gap: 15px;
+        }
+        .product{
+            padding: 10px;
+        }
+        .product-img{
+            width: 100%;
+            height: auto;
+        }
+        nav ul li{
+            text-align: center;
+        }
+        h1{
+            font-size: 28px;
+        }
+        h2{
+            font-size: 24px;
+        }
+        .product h3{
+            font-size: 18px;
+        }
+        .product p{
+            font-size: 14px;
+        }
+        .product button{
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .product{
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        body{
+            padding: 10px;
+        }
+    }
+
+
+
+
+
+
